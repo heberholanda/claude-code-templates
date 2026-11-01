@@ -4,7 +4,7 @@ Vendored from https://github.com/heberholanda/Claude-RemoteQR at commit 0318df6 
 
 Shows a **QR Code** for the `/remote-control` link, so you can pick up the session on your phone by pointing the camera at the terminal, with no copying and pasting.
 
-![The QR Code shown above the prompt after /remote-control connects](https://raw.githubusercontent.com/heberholanda/Claude-RemoteQR/v0.1.1/docs/qr.png)
+![The QR Code shown above the prompt after /remote-control connects](https://raw.githubusercontent.com/heberholanda/Claude-RemoteQR/v0.1.2/docs/qr.png)
 
 ## What it does
 
