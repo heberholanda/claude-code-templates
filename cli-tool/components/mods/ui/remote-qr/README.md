@@ -1,6 +1,6 @@
 # remote-qr
 
-Vendored from https://github.com/heberholanda/Claude-RemoteQR at commit 0318df6 (v0.1.2, MIT). I'm the author.
+Vendored from https://github.com/heberholanda/Claude-RemoteQR at commit 0318df6 (v0.1.2, MIT), plus the fixes from this PR's review. I'm the author.
 
 Shows a **QR Code** for the `/remote-control` link, so you can pick up the session on your phone by pointing the camera at the terminal, with no copying and pasting.
 
@@ -9,9 +9,10 @@ Shows a **QR Code** for the `/remote-control` link, so you can pick up the sessi
 ## What it does
 
 - When `/remote-control` connects, Claude Code prints the link as usual and the mod opens a band **above the prompt** with the link's QR Code and a **Close** button.
-- The code is compact (about 10 rows × 19 columns): it is drawn with Unicode 16 octant characters, 2 × 4 modules per cell, which keeps the modules square in a 1:2 terminal cell.
+- The code is compact (about 11 rows × 21 columns with its quiet zone): it is drawn with Unicode 16 octant characters, 2 × 4 modules per cell, which keeps the modules square in a 1:2 terminal cell.
 - It is drawn white on black, so it scans on light and dark terminals alike.
 - The band goes away on **Close** or with your next message.
+- If the code does not fit, the band says the size it needs instead of drawing a code that cannot scan.
 - If the session is already connected, `/remote-control` opens Claude Code's own menu and the mod stays out of the way.
 - No dependencies: the QR Code encoder (byte mode, level M, versions 1 to 10) is built in, after Project Nayuki's reference implementation (MIT).
 
