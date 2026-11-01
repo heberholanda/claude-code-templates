@@ -198,7 +198,7 @@ export const OCTANTS = Array.from(
  * modules square on a 1:2 terminal cell. Light modules are drawn as the
  * foreground, so draw it light on dark.
  */
-export function qrText(text: string, quiet = 2): string | null {
+export function qrText(text: string, quiet = 4): string | null {
   const m = qrMatrix(text)
   if (!m) return null
   const size = m.length + quiet * 2
